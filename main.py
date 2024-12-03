@@ -15,7 +15,7 @@ def calculator(a,b,operation=None):
 
 
 if __name__ == "__main__":
-    a,b,opt=1084,3140,"mul"
+    a,b,opt=1084,5,"add"
     with mlflow.start_run():
         result = calculator(a, b, opt)
         mlflow.log_param("a", a)
